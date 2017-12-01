@@ -1,7 +1,8 @@
 import {
   EMPLOYEE_UPDATE,
   EMPLOYEE_CREATE,
-  EMPLOYEE_SAVE_SUCCESS
+  EMPLOYEE_SAVE_SUCCESS,
+  EMPLOYEE_CLEAR
 } from '../actions/types';
 
 const INITIAL_STATE = {
@@ -17,6 +18,8 @@ export default (state = INITIAL_STATE, action) => {
     case EMPLOYEE_CREATE:
       return INITIAL_STATE; // Reset the state of form for creating employee
     case EMPLOYEE_SAVE_SUCCESS:
+      return INITIAL_STATE;
+    case EMPLOYEE_CLEAR:
       return INITIAL_STATE;
     default:
       return state;

@@ -4,9 +4,16 @@ import { Actions } from 'react-native-router-flux';
 import {
   EMPLOYEE_UPDATE,
   EMPLOYEE_CREATE,
+  EMPLOYEE_CLEAR,
   EMPLOYEE_FETCH_SUCCESS,
   EMPLOYEE_SAVE_SUCCESS
 } from './types';
+
+export const employeeClear = () => {
+  return {
+    type: EMPLOYEE_CLEAR
+  };
+};
 
 export const employeeUpdate = ({ prop, value }) => {
   return {

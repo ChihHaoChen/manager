@@ -4,7 +4,10 @@ import { connect } from 'react-redux';
 // use connect from 'redux' so the action creator can be called
 import Communications from 'react-native-communications';
 import EmployeeForm from './EmployeeForm';
-import { employeeUpdate, employeeSave, employeeDelete } from '../actions';
+import { employeeUpdate,
+         employeeSave,
+         employeeDelete
+} from '../actions';
 import { Card, CardSection, Button, Confirm } from './common';
 
 class EmployeeEdit extends Component {
